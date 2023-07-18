@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="admin.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <title>Admin</title>
+</head>
+<body>
+    <h1>On Admin page!!</h1>
+    <button onclick="logout(event)">Logout</button>
+    <script>
+         function logout(e){
+            window.location.href = 'login.html';
+        }
+    </script>
+    <h2>Votes</h2>
+    <div id="adminPage">
+        <p id="candidate1Votes"></p>
+        <p id="candidate2Votes"></p>
+        <p id="candidate3Votes"></p>
+        <p id="candidate4Votes"></p>
+    </div>
+</body>
+</html>
